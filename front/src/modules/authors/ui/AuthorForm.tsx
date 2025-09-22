@@ -48,7 +48,7 @@ export default function AuthorForm({ defaultValues, onSubmit, submitText="Guarda
         {errors.birthDate && <p className="text-sm text-red-600">{errors.birthDate.message}</p>}
       </div>
 
-      <button disabled={isSubmitting} className="px-4 py-2 rounded bg-blue-600 text-white">
+      <button disabled={isSubmitting} className="px-4 py-2 text-sm rounded border border-gray-400 text-gray-700 hover:bg-gray-100">
         {isSubmitting ? "Enviando…" : submitText}
       </button>
     </form>

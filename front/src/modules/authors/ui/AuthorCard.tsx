@@ -10,10 +10,11 @@ export default function AuthorCard({ author, onDelete }: { author: Author; onDel
       <div className="p-4 space-y-2">
         <h3 className="text-lg font-semibold">{author.name}</h3>
         <p className="text-sm text-gray-600">{author.description}</p>
-        <p className="text-xs text-gray-500">Nacido: {author.birthDate}</p>
         <div className="flex gap-2 pt-2">
-          <Link href={`/authors/${author.id}/edit`} className="px-3 py-1 text-sm rounded bg-blue-600 text-white">Editar</Link>
-          <button onClick={()=>onDelete(author.id)} className="px-3 py-1 text-sm rounded bg-red-600 text-white">Eliminar</button>
+          <Link href={`/authors/${author.id}/edit`} className="px-18 py-1 text-sm rounded border border-gray-400 text-gray-700 hover:bg-gray-100">Editar</Link>
+        </div>
+        <div className="flex gap-2 pt-2">
+          <button onClick={()=>onDelete(author.id)} className="px-16 py-1 text-sm rounded border border-gray-400 text-gray-700 hover:bg-gray-100">Eliminar</button>
         </div>
       </div>
     </div>
